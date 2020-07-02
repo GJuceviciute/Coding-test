@@ -1,4 +1,5 @@
 def balance(openingSum, interestRate, taxFreeLimit, taxRate, numMonths):
+    # assumes non-negative openingSum
     cur_balance = openingSum
     for _ in range(numMonths):
         interest = cur_balance * (interestRate / 100)
