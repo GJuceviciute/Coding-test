@@ -1,6 +1,5 @@
 def secondLowest(nums):
-    if not nums:
-        return
+    # assumes an array/list is not empty
     set_nums = set(nums)
     if len(set_nums) == 1:
         return nums[0]
