@@ -23,11 +23,4 @@ class Time:
             m = '0' + m
         if self.seconds < 10:
             s = '0' + s
-        # return h + ':' + m + ':' + s
-        return ':'.join([h, m, s])
-
-
-t = Time(23, 59, 60)
-print(t.timeString())
-print(t.scale(60*60+1))
-print(t.timeString())
+        return ':'.join([h, m, s])  # return h + ':' + m + ':' + s
